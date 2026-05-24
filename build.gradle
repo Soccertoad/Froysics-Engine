@@ -73,6 +73,14 @@ dependencies {
 
     testImplementation 'org.junit.jupiter:junit-jupiter:5.10.1'
     testRuntimeOnly 'org.junit.platform:junit-platform-launcher'
+
+    // ODE4J Maven to Gradle
+    compileOnly group: 'org.ode4j', name: 'core', version: '0.5.4'
+}
+
+//ODE4J Maven to Gradle
+repositories {
+    mavenCentral()
 }
 
 test {
